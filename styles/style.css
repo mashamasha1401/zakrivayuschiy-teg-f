@@ -27,7 +27,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  background-size: cover; 
+  background-size: cover;
   background: var(--bg-color);
   background-image:
       repeating-linear-gradient( to right,
@@ -69,14 +69,15 @@
 
 .header__theme-menu {
   margin-block-start: 5px;
+  transform: translateX(10px);
 }
 
 @media (width <= 375px) {
-  .header{
+  .header {
     inline-size: 100%;
   }
 
-  .conteiner_wigth{
+  .conteiner_wigth {
     inline-size:100%;
   }
 }
@@ -100,11 +101,6 @@
   display: flex;
   flex-direction: column;
   gap: 9px;
-}
-
-
-.header__theme-menu {
-  transform: translateX(10px);
 }
 
 button {
@@ -177,10 +173,9 @@ button {
 }
 
 .image {
-  inline-size: 100%; 
-  block-size: 100%; 
-  object-fit: cover; 
- 
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
 }
 
 .filter__1 {
@@ -315,12 +310,12 @@ button {
 }
 
 @media (width <= 375px) {
-  .button_save{
+  .button_save {
     flex-direction: column;
     gap: 8px;
   }
 
-  .floppy{
+  .floppy {
     width: 28px;
     height: 28px;
   }

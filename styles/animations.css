@@ -28,7 +28,7 @@
 
 .theme-menu__button::after {
     content: '';
-    display: block;                 
+    display: block;
     width: 0%;
     height: 3px;
     background-color: var(--decoration-color);
@@ -41,7 +41,7 @@
     transition: width 300ms, background-color 0.5s;
   }
 
-  .theme-menu__button:focus-visible {   
+  .theme-menu__button:focus-visible {
     border: none;
     outline: none;
   }
@@ -151,7 +151,7 @@
   }
 
   /*клик*/
-  .like-icon.is-liked .core { 
+  .like-icon.is-liked .core {
     fill: var(--heart-body);
     transition: fill 0.3s linear;
   }
