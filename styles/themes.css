@@ -18,6 +18,8 @@
     --watermark-color-shadow: #fff;
     --color-font: #fff;
     --heart-contur: #000;
+    --disket: #fff;
+    --disket_dialog: #000;
 }
 
 :root.theme-dark {
@@ -33,6 +35,8 @@
     --watermark-color-shadow: #000;
     --color-font: #00CC14;
     --heart-contur: #00CC14;
+    --disket: #00CC14;
+    --disket_dialog: #00CC14;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -49,5 +53,7 @@
     --watermark-color-shadow: #000;
     --color-font: #00CC14;
     --heart-contur: #00CC14;
+    --disket: #00CC14;
+    --disket_dialog: #00CC14;
     }
 } 

@@ -1,9 +1,10 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root { 
-    --font-main: 'Inter-Variable';
-    --font-accent: 'PressStart2P-Regular';
+    --font-main: Inter;
+    --font-accent: 'Press Start 2P';
     --font_weight_title: 700;
     --font_weight_text: 400;
+
     --bg-color: #fff;
     --decoration-color: #000;
     --gradient-color1: #d3d3d3;
@@ -15,5 +16,6 @@
     --color-font: #fff;
     --heart-contur: #000;
     --heart-body: #f00;
-
+    --disket: #fff;
+    --disket_dialog: #000;
   }
