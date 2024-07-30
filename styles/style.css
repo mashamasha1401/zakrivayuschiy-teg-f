@@ -13,7 +13,7 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
 */
-/* 
+/*
 .img_referens { 
   position: absolute; 
   top: 0; 
@@ -22,7 +22,7 @@
   opacity: 0.5; 
   width: 1440px; 
   height: auto; 
-}*/ 
+}*/
 
 .page {
   min-inline-size: 320px;
@@ -68,7 +68,7 @@ background-attachment: fixed;
 
 .header__theme-menu {
   margin-block-start: 5px;
-  margin-block-end: 20px;
+  margin-block-end: 24px;
   transform: translateX(10px);
 }
 
@@ -247,7 +247,6 @@ button {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  
   margin-top: 25px;
 }
 

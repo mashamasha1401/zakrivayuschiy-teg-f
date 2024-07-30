@@ -19,16 +19,15 @@
   transition-timing-function: ease;
 }
 
+/*
 .theme-menu__button:hover {
     opacity: 0.6;
     transition: opacity 0.3s;
     transition-timing-function: ease;
-}
+}*/
 
 .theme-menu__button:disabled {
     opacity: 0.6;
-    transition: opacity 0.3s;
-    transition-timing-function: ease;
     pointer-events: none;
 }
 
@@ -36,15 +35,14 @@
     content: '';
     display: block;
     width: 0%;
-    height: 3px;
+    height: 2px;    
     background-color: var(--decoration-color);
-    transition: none;
+    transition: width 0.3s ease, background-color 0.3s ease;
   }
   
   .theme-menu__button:focus-visible::after {
     width: 100%;
     background-color: var(--decoration-color);
-    transition: width 300ms, background-color 0.5s;
   }
 
   .theme-menu__button:focus-visible {
@@ -78,12 +76,20 @@
   } 
 
 /*кнопки лайк и сохранить на память*/
+button {
+  transition:  box-shadow 0.3s ease;
+}
+
+button:focus-visible {
+  outline: none;
+  box-shadow: 2px 2px 0 0 var(--decoration-color);
+}
+/*
   .card__like-button:focus-visible, .button_save:focus-visible, .dialog__button:focus-visible {
     outline: none;
     box-shadow: 2px 2px 0 0 var(--decoration-color);
-    transition:  box-shadow 0.3s;
-    transition-timing-function: ease;
-  }
+  }*/
+
 /*заливка кнопок при наведении*/
   @keyframes filling {
     from {
@@ -119,17 +125,19 @@
     transform-origin: 0 ;
   }
 
-
- .button_save:hover .fon,  .dialog__button:hover .fon, .card__like-button:hover .fon {
+  button:hover .fon {
     width: 100%;
   }
 
 
   /*сердечко*/
+  .card__icon-button {
+    transition: outline 0.3s ease;
+  }
+
   .card__icon-button:focus-visible {
     outline: 2px solid var(--decoration-color);
-    transition: outline 0.3s;
-    transition-timing-function: ease;
+    
   }
   /*hover*/
   .like-icon:hover .main-body {
@@ -169,7 +177,7 @@
 
   .like-icon.is-liked .main-body {
     fill: var(--heart-body);
-    transition: fill 0.3s linear;
+    transition: fill 0.3s 0.05s linear;
   }
 
   .like-icon.is-liked .contour {
@@ -190,7 +198,8 @@
   }
 
   .like-icon.is-liked .sparks {
-    animation: sparks-opacity 0.3s 0.1s ease-in  ;
+    animation: sparks-opacity 0.3s 0.1s ease-in alternate ;
+
   }
 
   @keyframes scale-heart {
@@ -206,7 +215,7 @@
   }
 
   .like-icon.is-liked {
-    animation: scale-heart 0.3s 0.1s ease-in;
+    animation: scale-heart 0.3s 0.1s ease-in alternate;
   }
 
   
