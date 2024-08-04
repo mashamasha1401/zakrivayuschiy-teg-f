@@ -177,7 +177,6 @@
 
   .like-icon.is-liked .sparks {
     animation: sparks-opacity 0.3s 0.1s ease-in alternate ;
-
   }
 
   @keyframes scale-heart {
