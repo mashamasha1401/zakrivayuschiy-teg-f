@@ -396,7 +396,7 @@ dialog:not([open]) {
   z-index: 0;
 }
 
-.dialog__disket {
+.dialog__disket {  
   color: var(--disket_dialo);
   height: 100%;
   width: 100%;
