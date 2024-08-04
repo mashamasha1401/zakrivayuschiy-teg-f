@@ -20,7 +20,7 @@
   left: 50%; 
   transform: translateX(-50%); 
   opacity: 0.5; 
-  width: 1440px; 
+  width: 375px; 
   height: auto; 
 }*/
 
@@ -68,7 +68,7 @@ background-attachment: fixed;
 
 .header__theme-menu {
   margin-block-start: 5px;
-  margin-block-end: 24px;
+  margin-block-end: 23px;
   transform: translateX(10px);
 }
 
@@ -137,15 +137,14 @@ button {
 }
 
 .article__title {
-  min-block-size: 31px;
   block-size: min-content;
-  
   background: var(--bg-color);
-
   color: var(--decoration-color);
   font-family: var(--font-main), sans-serif;
   font-variation-settings: 'wght' var(--font_weight_title, 700);
   padding-inline: 10px;
+  padding-top: 4px;
+  padding-bottom: 5px;
   display: flex;
   align-items: center;
   font-size: 18px;
@@ -188,6 +187,13 @@ button {
       text-shadow: none;
   }
 } 
+
+@media (width <= 375px) {
+  .watermark {
+    top: 22px;
+    right: 11px;
+  }
+}
 
 .image {
   inline-size: 100%;
@@ -250,9 +256,8 @@ button {
 }
 
 .card__icon-button {
-  height: 33px;
+  height: 34px;
   width: 38px;
-
   padding-left: 0px;
   padding-right: 0px;
   margin-right: 7px;
@@ -267,18 +272,16 @@ button {
 .card__like-button {
   height: 38px;
   width: 130px;
-  background-color: var(--bg-color);
-  border: 2px solid var(--decoration-color);
-  position: relative;
-  cursor: pointer;
 }
+
+
 
 .button__text {
   color: var(--color-font);
   font-family: var(--font-accent), sans-serif;
   font-size: 14px;
   white-space: nowrap;
-
+  
   position: relative;
   z-index: 2;
   mix-blend-mode: difference;
@@ -287,7 +290,7 @@ button {
 }
 
 .button_save {
-  border: 2px solid var(--decoration-color);
+  
   inline-size: min-content;
   block-size: min-content;
   cursor: pointer;
@@ -297,12 +300,7 @@ button {
   
   align-items: center;
   justify-content: space-between;
-  position: relative;
-  z-index: 0;
-}
-
-.button_upp {
-  text-transform: uppercase;
+  
 }
 
 .floppy {
@@ -385,11 +383,17 @@ dialog:not([open]) {
 }
 
 .dialog__button {
-  border: 2px solid var(--decoration-color);
   inline-size: 100%;
   block-size: 38px;
+  text-transform: uppercase;
+}
+
+.button__style {
+  background-color: var(--bg-color);
+  border: 2px solid var(--decoration-color);
   cursor: pointer;
   position: relative;
+  z-index: 0;
 }
 
 .dialog__disket {

@@ -76,59 +76,37 @@
   } 
 
 /*кнопки лайк и сохранить на память*/
-button {
+.button__style {
   transition:  box-shadow 0.3s ease;
 }
 
-button:focus-visible {
+.button__style:focus-visible {
   outline: none;
   box-shadow: 2px 2px 0 0 var(--decoration-color);
 }
-/*
-  .card__like-button:focus-visible, .button_save:focus-visible, .dialog__button:focus-visible {
-    outline: none;
-    box-shadow: 2px 2px 0 0 var(--decoration-color);
-  }*/
+
 
 /*заливка кнопок при наведении*/
-  @keyframes filling {
-    from {
-        transform: scaleX(0);
-    }
-    to {
-        transform: scaleX(1);
-    }
-  }
+.button__style {
+  overflow: hidden;
+}
 
-  @keyframes filling_out {
-    from {
-        transform: scaleX(1);
-    }
-    to {
-        transform: scaleX(0);
-    }
-  }
+.button__style::before {
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: var(--decoration-color);
+  transform: translate(-100%);
+  transition: transform 0.5s ease-in-out;
+  position: absolute;
+  z-index: 1;
+}
 
-  .fon {
-    width: 0%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    position: absolute;
-    z-index: 1;
-  
-    background-color: var(--decoration-color);
-    /*transition: transform 2s , transform-origin  2s, width 2s;*/
-    transition-property:  width;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
-    transform-origin: 0 ;
-  }
-
-  button:hover .fon {
-    width: 100%;
-  }
-
+.button__style:hover::before {
+  transform: translate(0%);
+}
 
   /*сердечко*/
   .card__icon-button {
